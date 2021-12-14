@@ -1,1 +1,9 @@
-pip install requests
+cffi==1.15.0
+msgpack==1.0.3
+py-algorand-sdk==1.8.0
+pycparser==2.21
+pycryptodomex==3.12.0
+PyNaCl==1.4.0
+python-dotenv==0.19.2
+six==1.16.0
+tinyman-py-sdk @ git+https://github.com/tinymanorg/tinyman-py-sdk.git@d36a9c1b5f8f69a8a24b780fdab3e0afb1d76d72
