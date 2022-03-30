@@ -40,3 +40,6 @@ data = [
 reduced_arr = reduce(reducer, data, [])
 final = reduce(red_2, reduced_arr, {})
 print(final)
+
+
+    
