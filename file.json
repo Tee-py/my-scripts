@@ -1,0 +1,114 @@
+{
+    "apps-local-states": [
+        {
+            "deleted": false,
+            "id": 447336112,
+            "key-value": [
+                {
+                    "key": "VUE=",
+                    "value": {
+                        "bytes": "",
+                        "type": 2,
+                        "uint": 0
+                    }
+                },
+                {
+                    "key": "VVNT",
+                    "value": {
+                        "bytes": "",
+                        "type": 2,
+                        "uint": 0
+                    }
+                },
+                {
+                    "key": "VVQ=",
+                    "value": {
+                        "bytes": "",
+                        "type": 2,
+                        "uint": 1642481562
+                    }
+                }
+            ],
+            "opted-in-at-round": 18416187,
+            "schema": {
+                "num-byte-slice": 8,
+                "num-uint": 8
+            }
+        },
+        {
+            "deleted": false,
+            "id": 464365150,
+            "key-value": [
+                {
+                    "key": "VUE=",
+                    "value": {
+                        "bytes": "",
+                        "type": 2,
+                        "uint": 0
+                    }
+                },
+                {
+                    "key": "VVNT",
+                    "value": {
+                        "bytes": "",
+                        "type": 2,
+                        "uint": 0
+                    }
+                },
+                {
+                    "key": "VVQ=",
+                    "value": {
+                        "bytes": "",
+                        "type": 2,
+                        "uint": 1642999962
+                    }
+                }
+            ],
+            "opted-in-at-round": 17996589,
+            "schema": {
+                "num-byte-slice": 8,
+                "num-uint": 8
+            }
+        },
+        {
+            "deleted": false,
+            "id": 465818260,
+            "key-value": [
+                {
+                    "key": "dXNh",
+                    "value": {
+                        "bytes": "u9YWNpKVKiPcvT+8c1kUZNhyidsQrhDwqkiz3Ib3/do=",
+                        "type": 1,
+                        "uint": 0
+                    }
+                }
+            ],
+            "opted-in-at-round": 18351872,
+            "schema": {
+                "num-byte-slice": 1,
+                "num-uint": 15
+            }
+        },
+        {
+            "deleted": false,
+            "id": 552635992,
+            "key-value": [
+                {
+                    "key": "hXSegEl4XCObjDAbXTGHvm+6io6gcRpWmRTKAC+5X6BlAAAAAAAAAAA=",
+                    "value": {
+                        "bytes": "",
+                        "type": 2,
+                        "uint": 820182
+                    }
+                }
+            ],
+            "opted-in-at-round": 18727395,
+            "schema": {
+                "num-byte-slice": 0,
+                "num-uint": 16
+            }
+        }
+    ],
+    "current-round": 20115557,
+    "next-token": "552635992"
+}
