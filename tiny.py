@@ -54,18 +54,5 @@ if __name__ == "__main__":
 
 
 
-# Check if any excess remaining after the swap
-"""
-excess = pool.fetch_excess_amounts()
-if ALGO in excess:
-    amount = excess[ALGO]
-    print(f'Excess: {amount}')
-        # We might just let the excess accumulate rather than redeeming if its < 1 TinyUSDC
-        if amount > 1_000_000:
-            transaction_group = pool.prepare_redeem_transactions(amount)
-            transaction_group.sign_with_private_key(account['address'], account['private_key'])
-            result = client.submit(transaction_group, wait=True)
-"""
-
 
 

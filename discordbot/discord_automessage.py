@@ -6,7 +6,7 @@ import urllib.parse
 import pickle
 
 from requests.api import request
-from config import getCreds
+from discordbot.config import getCreds
 #LOGIN#
 url = "https://discord.com"
 username,password = getCreds()
@@ -49,12 +49,15 @@ def sendMessage(daChannelID, daMessage, log = True):
     
     if log == True:
         print("Payload:"+str(payload))
-    requests.request("POST", url+"/api/v9/channels/"+str(daChannelID)+"/messages", json = payload, headers = headers)
-    time.sleep(.25)
+    res = requests.request("POST", url+"/api/v9/channels/"+str(daChannelID)+"/messages", json = payload, headers = headers)
+    print(res)
+    time.sleep(0.125)
+
 def channelInfo(daChannelID):
     print(url+"/channels/"+str(daChannelID))
     daChannelInfo = requests.request("GET", url+"/channels/"+str(daChannelID))
     return daChannelInfo.text
+
 def sendReply(daChannelID, daMessage, msgToReply, pingInReply = True, log = True):
 
     headers = {
@@ -79,6 +82,7 @@ def sendReply(daChannelID, daMessage, msgToReply, pingInReply = True, log = True
   
     requests.request("POST", url+"/api/v9/channels/"+str(daChannelID)+"/messages", json = payload, headers = headers)
     time.sleep(.25)
+
 def getMessages(daChannelID, daRange, log = True):
     headers = {
     'cookie': daDiscordCookies["__dcfduid"],
@@ -119,6 +123,7 @@ def getMessages(daChannelID, daRange, log = True):
                 returnMessages.extend(daChannelMessages)
         print(len(returnMessages))
         return(returnMessages[0:daRange])
+
 def exportMessages(daChannelID,fileName = "messages.list",log=True):
     headers = {
     'cookie': daDiscordCookies["__dcfduid"],
@@ -166,6 +171,7 @@ def displayTyping(daChannelID, daDuration):
     for interval in range(times):
         requests.request("POST", url+"/api/v9/channels/"+str(daChannelID)+"/typing", json = "", headers = headers)
         time.sleep(1)
+
 def searchMessages(daGuildID,isDMs=False,**kwargs):
     headers = {
     'cookie': daDiscordCookies["__dcfduid"],

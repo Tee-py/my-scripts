@@ -1,4 +1,4 @@
-from discord_automessage import sendMessage, channelInfo
+from discordbot.discord_automessage import sendMessage, channelInfo
 import time
 import random
 
